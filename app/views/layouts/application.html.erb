@@ -16,8 +16,8 @@
     <p class="alert"><%= alert %></p>
     <div>
       <% if user_signed_in? %>
-        <%#= link_to "Edit user", edit_user_registration_path %>
-        <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+        <%= link_to "Create new blog", new_blog_post_path %>
+        <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "bg-red-500 p-2 rounded text-white hover:bg-red-400" %>
       <%# else %>
         <%#= link_to "Login", new_user_session_path %>
         <%#= link_to "Create account", new_user_registration_path %>
